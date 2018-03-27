@@ -12,12 +12,12 @@ window.onload = function(){
 	for(var i = 0, len = Lis.length;i<len;i++) {
 		Lis[i].index = i;
 		Lis[i].onclick = function(){
-		for(var n = 0; n<len;n++) { //未点击时的状态
-			Lis[n].className = "";
-			Divs[n].className = "hide";  
-		}
-		this.className = "on";//这里是对点击事件添加相应的属性
-		Divs[this.index].className = ""; //这里是点击时div的状态，然后通过index绑定相应的div
+			for(var n = 0; n<len;n++) { //未点击时的状态
+				Lis[n].className = "";
+				Divs[n].className = "hide";  
+			}
+			this.className = "on";//这里是对点击事件添加相应的属性
+			Divs[this.index].className = ""; //这里是点击时div的状态，然后通过index绑定相应的div
 		}
 	}
 }
